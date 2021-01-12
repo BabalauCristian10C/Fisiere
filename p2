@@ -1,0 +1,14 @@
+list = []
+with open("numere.txt", "r") as f:
+    for l in f:
+        list.append(int(l))
+
+a = min(list)
+b = max(list)
+a *= 3
+b *= 2
+a, b = str(a), str(b)
+
+with open("produs.txt", "w") as f1:
+    f1.write(a + " ")
+    f1.write(b)
