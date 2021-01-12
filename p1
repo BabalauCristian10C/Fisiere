@@ -1,0 +1,8 @@
+list = []
+with open("numere.txt", "r") as f:
+    for l in f:
+        list.append(int(l))
+
+a = min(list)
+with open("minim.txt", "w") as f1:
+    f1.write(str(a))
